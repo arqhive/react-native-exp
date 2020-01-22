@@ -12,10 +12,11 @@ import {
   UsingAScrollView,
   UsingAListView,
   UsingAListView2,
+  Networking,
 } from './basic';
 
 export default class App extends Component {
   render() {
-    return <UsingAListView2 />;
+    return <Networking />;
   }
 }
