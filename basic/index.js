@@ -6,3 +6,5 @@ export {default as Style} from './Style';
 export {default as HeightAndWidth} from './HeightAndWidth';
 export {default as HeightAndWidth2} from './HeightAndWidth2';
 export {default as HandlingTextInput} from './HandlingTextInput';
+export {default as HandleTouches} from './HandlingTouches';
+export {default as HandleTouches2} from './HandlingTouches2';
