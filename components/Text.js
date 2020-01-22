@@ -53,12 +53,28 @@ class TextInANest extends Component {
   }
 }
 
+// View style 포함
 const styles = StyleSheet.create({
   baseText: {
-    marginTop: 150,
+    textShadowColor: 'red',
+    textShadowRadius: 10,
+    textShadowOffset: {width: 10, height: 10},
+    color: 'blue',
+    fontSize: 20,
+    fontStyle: 'italic', // 'normal'
+    fontWeight: 'bold', // 'normal', '100' ~ '900'
+    lineHeight: 30,
+    textAlign: 'auto', // 'left', 'right', 'center', 'justify'
+    textDecorationLine: 'underline', // 'none', 'line-through', 'underline line-through'
     fontFamily: 'Cochin',
-    fontSize: 50,
-    fontWeight: 'bold',
+    includeFontPadding: false, // Android Only. default true. false로 하면 추가 글꼴 패딩을 제거한다.
+    textAlignVertical: 'center', // Android Only. includeFontPadding과 궁합이 좋다. // 'auto', 'top', 'bottom'
+    letterSpacing: 5, // default 0. Android 5.0부터 지원. iOS는 문자 사이에 추가 공간이 렌더링
+    textDecorationColor: 'red', // iOS Only
+    textDecorationStyle: 'dotted', // iOS Only 'solid', 'double', 'dashed'
+    textTransform: 'capitalize', // 'none', 'uppercase', 'lowercase'
+    writingDirection: 'rtl', // iOS Only 'auto', 'ltr' ,'rtl'
+    marginTop: 150,
   },
 });
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 // View는 UI구축을 위한 가장 기본적인 컴포넌트다.
 // flexbox, style, touch 처리, 접근성 컨트롤 등을 지원하는 컨테이너 이다.
@@ -17,6 +17,33 @@ import {View, Text} from 'react-native';
 // hitSlop이 겹치면 zIndex가 우선시 된다.
 
 // pointerEvents -> auto, none, box-none 터치 이벤트의 대상이 될 수 있는지 여부를 제어 한다.
+
+const styles = StyleSheet.create({
+  borderRightColor: 'red',
+  backfaceVisibility: 'visible', // 'hidden'
+  borderBottomColor: 'red',
+  borderBottomEndRadius: 10,
+  borderBottomLeftRadius: 10,
+  borderBottomRightRadius: 10,
+  borderBottomStartRadius: 10,
+  borderColor: 'red',
+  borderEndColor: 'red',
+  borderLeftColor: 'red',
+  borderLeftWidth: 10,
+  borderRadius: 10, // 안 보이면 overflow: 'hidden'
+  backgroundColor: 'blue',
+  borderRightWidth: 10,
+  borderStartColor: 'red',
+  borderStyle: 'solid', // 'dotted', 'dashed'
+  borderTopColor: 'red',
+  borderTopEndRadius: 10,
+  borderTopLeftRadius: 10,
+  borderTopStartRadius: 10,
+  borderTopWidth: 10,
+  borderWidth: 20,
+  opacity: 0.7,
+  elevation: 1, // Android에서 elevation API를 사용하여 뷰의 고도를 설정한다. 항목에 그림자를 추가하고 겹치는 뷰의 z-index에 영향을 준다. Android 5.0이상 지원
+});
 
 class ViewColoredBoxesWithText extends Component {
   render() {
