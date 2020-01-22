@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {TextInANest} from './components/Text';
+import Image from './components/Image';
 
 export default class App extends Component {
   render() {
-    return <TextInANest />;
+    return <Image />;
   }
 }
