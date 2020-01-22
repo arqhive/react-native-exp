@@ -26,8 +26,8 @@ const stylesAnother = StyleSheet.create({
 
 // Platform은 어떤 값이라도 사용 할 수 있다.
 const Component = Platform.select({
-  ios: () => require('ComponentIOS'),
-  android: () => require('ComponentAndroid'),
+  ios: () => require('./ComponentIOS'),
+  android: () => require('./ComponentAndroid'),
 })();
 
 <Component />;
