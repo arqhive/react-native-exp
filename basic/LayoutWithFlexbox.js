@@ -91,4 +91,8 @@ class AlignItemsBasics extends Component {
 // width, height (기본값 'auto')
 // pixels(수치는 표기하지 않음), percentage(부모에 상대적)
 
+// position
+// relative(기본값)
+// absolute
+
 export {FlexDirectionBasics, JustifyContentBasics, AlignItemsBasics};

@@ -7,6 +7,7 @@ import {
   Style,
   HeightAndWidth,
   HeightAndWidth2,
+  HandlingTextInput,
 } from './basic';
 import {
   FlexDirectionBasics,
@@ -16,6 +17,6 @@ import {
 
 export default class App extends Component {
   render() {
-    return <AlignItemsBasics />;
+    return <HandlingTextInput />;
   }
 }
