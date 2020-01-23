@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Compo from './AndroidComponents/DrawerLayoutAndroid';
+import Compo from './AndroidComponents/ProgressBar';
 
 export default class App extends Component {
   render() {
