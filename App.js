@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Compo from './AndroidComponents/Toast';
+import Compo from './components/ActivityIndicator';
 
 export default class App extends Component {
   render() {
