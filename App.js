@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import TextInput from './components/TextInput';
+import ScrollView from './components/ScrollView';
 
 export default class App extends Component {
   render() {
-    return <TextInput />;
+    return <ScrollView />;
   }
 }
