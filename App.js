@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Image from './components/Image';
+import TextInput from './components/TextInput';
 
 export default class App extends Component {
   render() {
-    return <Image />;
+    return <TextInput />;
   }
 }
