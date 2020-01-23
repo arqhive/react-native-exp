@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Compo from './components/Alert';
+import Compo from './components/Clipboard';
 
 export default class App extends Component {
   render() {
