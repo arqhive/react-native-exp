@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Button from './components/Button';
+import Picker from './components/Picker';
 
 export default class App extends Component {
   render() {
-    return <Button />;
+    return <Picker />;
   }
 }
