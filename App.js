@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import ScrollView from './components/ScrollView';
+import Button from './components/Button';
 
 export default class App extends Component {
   render() {
-    return <ScrollView />;
+    return <Button />;
   }
 }
