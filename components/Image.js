@@ -3,11 +3,25 @@ import {View, Image, StyleSheet} from 'react-native';
 
 // 네트워크에서 이미지를 가져오는 경우 이미지의 크기를 수동으로 지정해야 한다.
 
+// Layout Props..., Shadow Props..., Transforms...
 const styles = StyleSheet.create({
-  stretch: {
+  image: {
+    borderTopRightRadius: 10,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderColor: 'blue',
+    borderRadius: 10,
+    borderTopLeftRadius: 10,
+    backgroundColor: 'blue',
+    borderWidth: 1,
+    opacity: 0.5,
+    overflow: 'visible', // 'hidden'
+    tintColor: 'red',
+    backfaceVisibility: 'visible', // 'hidden'
+    overlayColor: 'blue', // Android Only 둥근 모서리가 있는경우 해당 모서리 부분에 단색이 채워짐
     width: 50,
     height: 200,
-    resizeMode: 'stretch',
+    resizeMode: 'stretch', // resizeMode props와 동일
   },
 });
 
@@ -33,11 +47,11 @@ export default class DisplayAnImage extends Component {
     return (
       <View style={{marginTop: 100}}>
         <Image
-          style={{width: 100, height: 100}}
+          style={styles.image}
           source={{
             uri: 'https://facebook.github.io/react-native/img/tiny_logo.png',
           }}
-          blurRadius={5} // 이미지에 흐림 필터를 넣고 흐림 반경을 설정
+          // blurRadius={5} // 이미지에 흐림 필터를 넣고 흐림 반경을 설정
           onLayout={e => console.log('마운트 및 레이아웃 변경시 호출!')}
           // onLoad={() => alert('로드가 성공적으로 완료되었다.')}
           // onLoadEnd={() => alert('로드가 성공하거나 실패하였다.')}
@@ -46,7 +60,7 @@ export default class DisplayAnImage extends Component {
           // loadingIndicatorSource={} // 이미지가 로드 되는 동안 사용될 소스
           onError={e => alert('로드 중에 에러가 발생했다.')}
           resizeMethod="auto" // Android Only 'auto', 'resize', 'scale'
-          capInsets={{top: 10, left: 10, bottom: 10, right: 10}} // iOS Only 이미지의 중앙과 테두리가 커진다.
+          // capInsets={{top: 10, left: 10, bottom: 10, right: 10}} // iOS Only 이미지의 중앙과 테두리가 커진다.
           // defaultSource={} 기본 이미지 소스 Android랑 iOS 좀 다른데 쓸필요는 별로 없을거 같다.
           onPartialLoad={() => alert('부분 로드!')} // iOS 점진적 JPEG 로드를 위해
           // onProgress={e => alert('다운로드 중!')}
