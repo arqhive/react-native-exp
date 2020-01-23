@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Compo from './components/Dimensions';
+import Compo from './components/KeyboardAvoidingView';
 
 export default class App extends Component {
   render() {
