@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import PixelRatio from './components/PixelRatio';
+import StatusBar from './components/StatusBar';
 
 export default class App extends Component {
   render() {
-    return <PixelRatio />;
+    return <StatusBar />;
   }
 }
