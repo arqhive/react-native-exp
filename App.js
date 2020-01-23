@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Compo from './components/Modal';
+import PixelRatio from './components/PixelRatio';
 
 export default class App extends Component {
   render() {
-    return <Compo />;
+    return <PixelRatio />;
   }
 }
