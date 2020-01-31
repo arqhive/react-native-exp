@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import StatusBar from './components/StatusBar';
+import FlatList from './components/FlatList';
 
 export default class App extends Component {
   render() {
-    return <StatusBar />;
+    return <FlatList />;
   }
 }
