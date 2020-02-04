@@ -5,6 +5,7 @@ const FadeInView = props => {
   const [fadeAnim] = useState(new Animated.Value(0)); // 투명도를 위한 초기값
 
   useEffect(() => {
+    // setState 보다 빠르고 최적화된 방식으로 업데이트 된다.
     Animated.timing(fadeAnim, {toValue: 1, duration: 10000}).start();
   }, []);
 
