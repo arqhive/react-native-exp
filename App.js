@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import FlatList from './components/FlatList';
+import Animated from './guide/Animations';
 
 export default class App extends Component {
   render() {
-    return <FlatList />;
+    return <Animated />;
   }
 }
