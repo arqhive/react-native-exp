@@ -16,7 +16,7 @@ import {
 // recordInteraction() 상호 작용이 발생한 목록
 // flashScrollIndicators() 스크롤 인디케이터를 잠깐 표시
 // getScrollReponder()
-// getScrollableNode()
+// getScrollableNode()g
 
 const DATA = [
   {
